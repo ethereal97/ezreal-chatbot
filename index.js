@@ -27,8 +27,7 @@ app.post('/webhook', (req, res) => {
     let { object, entry } = req.body;
     if (object !== 'page') return res.status(400).json({ error: 'bad request' });
     res.status(200).send('OK');
-
-    entry.forEach(({ sender, message }) => {
+    entry[0].messaging.forEach(({ sender, message }) => {
         let recipient = {
             id: sender.id
         };
