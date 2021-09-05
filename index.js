@@ -37,7 +37,7 @@ app.post('/webhook', (req, res) => {
         if (is_greeted) {
             return;
         }
-        messages.push(e);
+        messages.push({ sender, message });
         axios.post(`https://graph.facebook.com/me/messages?access_token=${FACEBOOK_MESSENGING_TOKEN}`, {
                 recipient,
                 message: { text: 'မင်္ဂလာပါ' },
