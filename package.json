@@ -1,0 +1,21 @@
+{
+    "name": "event-stream",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "start": "node index.js",
+        "dev": "nodemon index.js"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "express": "^4.17.1"
+    },
+    "devDependencies": {
+        "dotenv": "^10.0.0",
+        "morgan": "^1.10.0",
+        "nodemon": "^2.0.12"
+    }
+}
